@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Compactado</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="meu-site.css">
+    <link rel="stylesheet" href="outras-midias.css">
+</head>
+<body onresize="mudatamaho()">
+    <script>
+        function mudatamaho(){
+            if (window.innerwidth >= 769) {
+                itens.style.display = 'block'
+            }
+            else {itens.style.display = ' none'}
+        }
+        function chamamenu (){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }
+            else { itens.style.display = 'block'}
+        }
+    </script>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burger" class="material-icons" onclick="chamamenu()">menu</i>
+
+        <menu id="itens">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </menu>
+    </header>
+    <article>
+        <h2>Testando Media Queries</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, esse. Facere veritatis vitae suscipit natus earum expedita nesciunt ipsam! Totam eius vitae nulla dolores deserunt perferendis libero, aspernatur omnis placeat?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa illo, saepe fugiat ducimus voluptate corrupti sit officia eum aliquid similique rem cupiditate natus? Fugit iste, magnam deleniti fuga eligendi harum!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, esse. Facere veritatis vitae suscipit natus earum expedita nesciunt ipsam! Totam eius vitae nulla dolores deserunt perferendis libero, aspernatur omnis placeat?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa illo, saepe fugiat ducimus voluptate corrupti sit officia eum aliquid similique rem cupiditate natus? Fugit iste, magnam deleniti fuga eligendi harum!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, esse. Facere veritatis vitae suscipit natus earum expedita nesciunt ipsam! Totam eius vitae nulla dolores deserunt perferendis libero, aspernatur omnis placeat?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa illo, saepe fugiat ducimus voluptate corrupti sit officia eum aliquid similique rem cupiditate natus? Fugit iste, magnam deleniti fuga eligendi harum!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, esse. Facere veritatis vitae suscipit natus earum expedita nesciunt ipsam! Totam eius vitae nulla dolores deserunt perferendis libero, aspernatur omnis placeat?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa illo, saepe fugiat ducimus voluptate corrupti sit officia eum aliquid similique rem cupiditate natus? Fugit iste, magnam deleniti fuga eligendi harum!
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, esse. Facere veritatis vitae suscipit natus earum expedita nesciunt ipsam! Totam eius vitae nulla dolores deserunt perferendis libero, aspernatur omnis placeat?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa illo, saepe fugiat ducimus voluptate corrupti sit officia eum aliquid similique rem cupiditate natus? Fugit iste, magnam deleniti fuga eligendi harum!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, esse. Facere veritatis vitae suscipit natus earum expedita nesciunt ipsam! Totam eius vitae nulla dolores deserunt perferendis libero, aspernatur omnis placeat?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa illo, saepe fugiat ducimus voluptate corrupti sit officia eum aliquid similique rem cupiditate natus? Fugit iste, magnam deleniti fuga eligendi harum!
+        </p>
+    </article>
+</body>
+</html>
